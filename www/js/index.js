@@ -43,7 +43,7 @@ $('.loader1').fadeIn();
 
 
 $("#BtnEnt" ).click(function() {
-var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://citycard.smart-pavlodar.kz/app/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
         
 function didReceiveRemoteNotificationCallBack(jsonData) {}
@@ -55,7 +55,7 @@ function didOpenRemoteNotificationCallBack(jsonData) {}
 
         //ПОДКЛЮЧЕНИЕ ПУШЕЙ 
            window.plugins.OneSignal
-          .startInit("3fc2f01b-b67f-48a5-87bc-bfd1df368503")
+          .startInit("6e9818ed-954b-48fe-96cd-3622d5252ffa")
           .handleNotificationReceived(didReceiveRemoteNotificationCallBack)
           .handleNotificationOpened(didOpenRemoteNotificationCallBack)
 		  .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
@@ -66,7 +66,7 @@ window.plugins.OneSignal.getIds(function(ids) {
 ipush = ids.userId;
 $('.loader1').hide();
 localStorage.ipush=ipush;
-var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://citycard.smart-pavlodar.kz/app/?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 $('.loader2').show();
 });
         
