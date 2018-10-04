@@ -6,7 +6,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
  id        = "kz.citycard"
-      version   = "0.1">
+      version   = "0.2">
 
     <name>CityCard Androidr</name>
 
@@ -49,10 +49,7 @@ MaksimMorozov
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 <plugin name="onesignal-cordova-plugin"  source="npm" />
     <!-- add a version here, otherwise PGB will use whatever the latest version of the package on npm is -->
-<plugin name="phonegap-plugin-barcodescanner" />
-    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-    <string>To scan barcodes</string>
-</edit-config>
+
 
 <!-- Recommend the newest cli but requires cli-5.1.1+ and gradle for Android. -->
 <!-- If the below settings are not compatible with your project set the "PGB ANT" version above. -->
