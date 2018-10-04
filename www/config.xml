@@ -6,9 +6,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
  id        = "kz.citycard"
-      version   = "0.2">
+      version   = "0.21">
 
-    <name>CityCard Androidr</name>
+    <name>CityCard Android</name>
 
     <description>
 «SMART Павлодар» - это многофункциональная мобильная система
